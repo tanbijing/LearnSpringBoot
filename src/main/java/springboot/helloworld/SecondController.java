@@ -20,6 +20,7 @@ public class SecondController {
 	@RequestMapping("/getName")
 	public String getName(Map<String, String> result){
 		result.put("name", "tom");
-		return "getNameView";
+		System.out.println(result);
+		return "name";
 	}
 }
